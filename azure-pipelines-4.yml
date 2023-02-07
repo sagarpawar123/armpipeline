@@ -1,0 +1,24 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'azurearm-conn'
+    subscriptionId: '3116c2cb-543c-4da1-a21b-0a24b6b80d4a'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'sagar-devops-rg'
+    location: 'Central India'
+    templateLocation: 'URL of the file'
+    csmFileLink: 'https://raw.githubusercontent.com/sagarpawar123/armpipeline/main/storageaccount/azuredeploy.json?'
+    deploymentMode: 'Incremental'
+    deploymentName: 'sagar-arm02'
