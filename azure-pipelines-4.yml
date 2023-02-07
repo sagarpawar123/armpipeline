@@ -22,4 +22,4 @@ steps:
     csmFileLink: 'https://github.com/sagarpawar123/armpipeline/blob/main/storageaccount/azuredeploy.json'
     overrideParameters: '-projectName sagardev'
     deploymentMode: 'Incremental'
-    deploymentName: 'devdeployment'
+    deploymentName: 'deployment1'
