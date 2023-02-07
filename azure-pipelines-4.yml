@@ -19,6 +19,6 @@ steps:
     resourceGroupName: 'sagar-devops-rg'
     location: 'Central India'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://raw.githubusercontent.com/sagarpawar123/armpipeline/main/storageaccount/azuredeploy.json?'
+    csmFileLink: 'https://raw.githubusercontent.com/sagarpawar123/armpipeline/main/storageaccount/azuredeploy.json'
     deploymentMode: 'Incremental'
     deploymentName: 'sagar-arm02'
